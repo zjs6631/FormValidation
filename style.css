@@ -1,0 +1,35 @@
+html,
+body{
+    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-image: linear-gradient(to right, rgb(51, 51, 142), rgb(60, 58, 58));
+    background-repeat: no-repeat;
+}
+.form{
+    justify-self: center;
+    align-self: center;
+    width: 200px;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+}
+
+#emailInput:valid {
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(50, 210, 50);
+    border-width: 1px;
+}
+
+#emailInput:invalid {
+    background-color: white;
+    color: red;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
